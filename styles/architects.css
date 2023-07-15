@@ -3,6 +3,9 @@
 * {
   font-family: "Work Sans", sans-serif;
 }
+.text-light-gray {
+    color: #727272;
+}
 .btn-primary {
   border-radius: 0.3rem;
   background: #ff900e;
@@ -14,6 +17,11 @@
   font-weight: 600;
   cursor: pointer;
 }
+.section-title {
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
+  }
 /* shared style end */
 header {
   background: rgba(255, 144, 14, 0.1);
@@ -24,11 +32,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.logo {
-  color: #131313;
-  font-size: 3rem;
-  font-weight: 700;
-}
+
 nav > ul {
   display: flex;
 }
@@ -106,16 +110,21 @@ main {
   header {
     padding: 20px;
   }
-  nav {
+  nav ,.team-container{
     flex-direction: column;
   }
   .banner-title {
     font-size: 2rem;
   }
+  
+  .team-img-container{
+    grid-template-columns: 1fr;
+  }
+
 }
 /* tablet or medium device */
 @media screen and (min-width: 576px) and (max-width: 956px) {
-  nav {
+  nav, .team-container {
     flex-direction: column;
   }
   header {
@@ -124,4 +133,5 @@ main {
   .banner-title {
     font-size: 3rem;
   }
+
 }
